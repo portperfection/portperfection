@@ -115,6 +115,12 @@ h1.title.small{ font-size:clamp(2.4rem, 6vw, 3.8rem); }
   border:none !important; padding:16px 34px !important; border-radius:2px !important;
   text-decoration:none !important; display:inline-flex !important; align-items:center; gap:10px;
   cursor:pointer; transition:background .2s ease, transform .2s ease;
+  white-space:nowrap !important;
+}
+@media (max-width:400px){
+  .btn, .buy-btn, a.payhip-buy-button{
+    font-size:0.8rem !important; padding:14px 18px !important;
+  }
 }
 .btn:hover, .buy-btn:hover, a.payhip-buy-button:hover{ background:var(--gold-bright) !important; transform:translateY(-1px); }
 .btn:focus-visible, .buy-btn:focus-visible, a.payhip-buy-button:focus-visible{ outline:2px solid var(--gold-bright); outline-offset:3px; }
